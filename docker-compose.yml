@@ -1,0 +1,25 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: stock_db
+      MYSQL_USER: stock_user
+      MYSQL_PASSWORD: stock_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - stock_network
+    labels:
+      org.springframework.boot.autoconfigure: "true"
+
+networks:
+  stock_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
