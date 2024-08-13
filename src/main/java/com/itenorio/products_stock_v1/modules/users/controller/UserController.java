@@ -24,7 +24,7 @@ public class UserController {
   @Autowired
   public UserService userService;
 
-  @PostMapping(path = "/user") // Map ONLY POST Requests
+  @PostMapping(path = "/user")
   public @ResponseBody String addNewUser(
       @RequestParam String name,
       @RequestParam String email,
