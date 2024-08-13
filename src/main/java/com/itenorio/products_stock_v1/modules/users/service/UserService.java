@@ -32,6 +32,15 @@ public class UserService {
     return this.userRepository.findAll();
   }
 
+  public User getUserByID(Integer id) throws NotFoundException {
+    Optional<User> optionalUser = this.userRepository.findById(id);
+    if(!optionalUser.isPresent()) {
+      throw new NotFoundException();
+    }
+
+    return optionalUser.get();
+  }
+
   public User updateUser(User user, Integer id) throws NotFoundException {
     Optional<User> optionalUser = this.userRepository.findById(id);
     if (!optionalUser.isPresent()) {

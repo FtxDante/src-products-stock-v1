@@ -39,6 +39,11 @@ public class UserController {
     return this.userService.getAllUsers();
   }
 
+  @GetMapping(path = "/user/{id}")
+  public User findUserByID(@PathVariable("id") Integer id) throws NotFoundException {
+    return this.userService.getUserByID(id);
+  }
+
   @PutMapping(path = "/user/{id}")
   public @ResponseBody User updateUser(@RequestBody User user, @PathVariable("id") Integer id) throws InternalServerError, NotFoundException {
     return this.userService.updateUser(user, id);
