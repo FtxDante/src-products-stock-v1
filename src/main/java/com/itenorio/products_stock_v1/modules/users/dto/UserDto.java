@@ -1,4 +1,4 @@
-package com.itenorio.products_stock_v1.dto;
+package com.itenorio.products_stock_v1.modules.users.dto;
 
 public class UserDto {
   private String name;

@@ -1,6 +1,6 @@
-package com.itenorio.products_stock_v1.entity;
+package com.itenorio.products_stock_v1.modules.users.entity;
 
-import com.itenorio.products_stock_v1.enums.Role;
+import com.itenorio.products_stock_v1.modules.users.enums.Role;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
