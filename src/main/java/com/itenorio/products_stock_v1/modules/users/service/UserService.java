@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.itenorio.products_stock_v1.modules.users.entity.User;
 import com.itenorio.products_stock_v1.modules.users.enums.Role;
 import com.itenorio.products_stock_v1.modules.users.repository.UserRepository;
+import com.itenorio.products_stock_v1.modules.users.schema.User;
 
 @Service
 public class UserService {

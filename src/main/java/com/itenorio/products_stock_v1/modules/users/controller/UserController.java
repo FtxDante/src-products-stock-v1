@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpServerErrorException.InternalServerError;
 
-import com.itenorio.products_stock_v1.modules.users.entity.User;
+import com.itenorio.products_stock_v1.modules.users.schema.User;
 import com.itenorio.products_stock_v1.modules.users.service.UserService;
 
 @RestController

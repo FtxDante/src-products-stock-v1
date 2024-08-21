@@ -1,4 +1,4 @@
-package com.itenorio.products_stock_v1.modules.users.entity;
+package com.itenorio.products_stock_v1.modules.users.schema;
 
 import com.itenorio.products_stock_v1.modules.users.enums.Role;
 
